@@ -1,0 +1,171 @@
+/* General styles for product cards */
+.product-card {
+  background-color: #f8f9fa; /* Light background for the card */
+  border: 1px solid #ddd; /* Light border around the card */
+  border-radius: 10px; /* Slightly larger border radius for a more rounded look */
+  overflow: hidden; /* Ensure content does not overflow */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%; /* Ensure card takes full width of the column */
+  max-width: 300px; /* Adjust width to fit content */
+  box-sizing: border-box;
+  margin: 0 auto; /* Center card horizontally */
+}
+
+/* Style for product image container */
+.product-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px; /* Increased padding for better spacing */
+}
+
+/* Style for product image */
+.product-image {
+  width: 100%;
+  height: auto;
+  max-height: 250px; /* Adjusted max-height for larger images */
+  object-fit: cover;
+}
+
+/* Style for card body */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px; /* Increased padding for better spacing */
+  flex-grow: 1; /* Ensure card body grows to fill available space */
+}
+
+/* Style for card title */
+.card-title {
+  font-size: 1.5rem; /* Larger font size for the title */
+  margin-bottom: 0.75rem; /* Increased margin for better spacing */
+}
+
+/* Style for product price container */
+.product-price-container {
+  margin-bottom: 1.5rem; /* Increased margin for better spacing */
+}
+
+/* Style for product price */
+.product-price {
+  font-size: 1.25rem; /* Larger font size for the price */
+  font-weight: bold;
+}
+
+/* Style for add-to-cart button */
+.add-to-cart-btn {
+  background-color: #007bff;
+  border: none;
+  padding: 15px; /* Increased padding for a larger button */
+  color: #fff;
+  border-radius: 5px; /* Slightly larger border radius for the button */
+  width: 100%;
+  font-size: 1rem; /* Larger font size for the button text */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for add-to-cart button */
+.add-to-cart-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive layout for cards */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Add some gap between the cards */
+  justify-content: center; /* Center align items in the row */
+}
+
+/* Ensure the cards fit well in their containers */
+.col-md-3 {
+  flex: 1 1 23%;
+  max-width: 23%;
+  box-sizing: border-box;
+  margin-bottom: 20px; /* Add margin below each card for spacing */
+}
+
+/* Style for the sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #343a40;
+  color: #fff;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+/* Style for the open state of the sidebar */
+.sidebar.open {
+  transform: translateX(0);
+}
+
+/* Style for sidebar content */
+.sidebar-content {
+  padding: 20px;
+}
+
+/* Style for sidebar items */
+.items {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+/* Style for overlay when sidebar is open */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Style for the navigation bar */
+.nav {
+  background-color: #343a40;
+  color: #fff;
+  padding: 10px 20px;
+  position: relative;
+}
+
+/* Style for the navigation bar links */
+.nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Style for the search bar */
+.search_bar {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/* Style for search input */
+.search_bar input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  width: 200px;
+}
+
+/* Style for search icon */
+.material-symbols-outlined {
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+/* Style for buttons in the navigation bar */
+.btn {
+  margin: 0 5px;
+}
